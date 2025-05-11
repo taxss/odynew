@@ -117,7 +117,7 @@ st.markdown("""
 # Header
 st.markdown("""
     <div class="app-title">
-        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ihcuae.com%2Fhome&psig=AOvVaw2sM9JqWadSk7krB2ae_KY2&ust=1747047398189000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNjGyu6gm40DFQAAAAAdAAAAABAE" width="280">
+        <img src="https://www.ihcuae.com/photo/logo/2024/1705302486_logo-org.png" width="280">
         <h1 style="color:white;">ODY Ai</h1>
     </div>
     <div class="app-subtitle">Know what the state of your stock is.</div>
