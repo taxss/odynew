@@ -120,7 +120,7 @@ st.markdown("""
         <img src="https://www.ihcuae.com/photo/logo/2024/1705302486_logo-org.png" width="280">
         <h1 style="color:white;">ODY Ai</h1>
     </div>
-    <div class="app-subtitle">Know what the state of your stock is.</div>
+    <div class="app-subtitle">Get to know IHC companies.</div>
 """, unsafe_allow_html=True)
 
 # Init session state
@@ -132,7 +132,7 @@ if "is_thinking" not in st.session_state:
     st.session_state.is_thinking = False
 
 # 📬 Email Subscribe
-with st.expander("Subscribe to Weekly Stock Updates"):
+with st.expander("Subscribe to Weekly Subsidiary Updates"):
     with st.form("email_form", clear_on_submit=True):
         email = st.text_input("Enter your email", placeholder="name@example.com")
         subscribed = st.form_submit_button("Subscribe")
