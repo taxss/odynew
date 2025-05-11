@@ -5,7 +5,7 @@ import uuid
 import requests
 
 # Page config
-st.set_page_config(page_title="ORYN Ai", layout="centered", initial_sidebar_state="collapsed")
+st.set_page_config(page_title="ODY Ai", layout="centered", initial_sidebar_state="collapsed")
 
 # Apply optional theme switch
 # apply_theme()  # Uncomment if you want the light/dark mode switch
@@ -117,8 +117,8 @@ st.markdown("""
 # Header
 st.markdown("""
     <div class="app-title">
-        <img src="https://images.prismic.io/icelandic/dca19f53-0f5e-4a8c-857e-c4a14211aa40_icelandic_corporate_logo_01.png?auto=compress,format" width="280">
-        <h1 style="color:white;">ORYN Ai</h1>
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ihcuae.com%2Fhome&psig=AOvVaw2sM9JqWadSk7krB2ae_KY2&ust=1747047398189000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNjGyu6gm40DFQAAAAAdAAAAABAE" width="280">
+        <h1 style="color:white;">ODY Ai</h1>
     </div>
     <div class="app-subtitle">Know what the state of your stock is.</div>
 """, unsafe_allow_html=True)
@@ -162,7 +162,7 @@ for role, msg in st.session_state.messages:
     elif role == "bot":
         st.markdown(f"""
             <div class="message-block odyn">
-                <div class="label">Oryn</div>
+                <div class="label">Ody</div>
         """, unsafe_allow_html=True)
         st.markdown(msg, unsafe_allow_html=True)
         st.markdown("</div>", unsafe_allow_html=True)
@@ -171,7 +171,7 @@ for role, msg in st.session_state.messages:
 with st.container():
     st.markdown('<div class="chat-input-container">', unsafe_allow_html=True)
     with st.form("chat_form", clear_on_submit=True):
-        user_input = st.text_input("", placeholder="e.g stock of salmon over 180 days old....", label_visibility="collapsed")
+        user_input = st.text_input("", placeholder="e.g tell me about Sirius Holdings....", label_visibility="collapsed")
         submitted = st.form_submit_button("Send")
     st.markdown("</div>", unsafe_allow_html=True)
 
@@ -183,7 +183,7 @@ if submitted and user_input.strip():
 
 # 🤖 Trigger AI
 if st.session_state.is_thinking:
-    with st.spinner("Oryn is thinking..."):
+    with st.spinner("ODY is thinking..."):
         handle_ai_response()
 
 # ⬇️ Auto Scroll
